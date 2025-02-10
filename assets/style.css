@@ -1,0 +1,81 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: rgb(0, 0, 0);
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 255, 0);
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+nav {
+    text-align: right;
+    flex: 1;
+    padding-top: 30px;
+    margin-right: 50px;
+}
+
+.container {
+    display: flex;
+}
+
+.container h1 {
+    flex: 1;
+    color: rgb(0, 255, 0);
+    text-decoration: underline;
+    font-family: sans-serif;
+}
+
+.contact-button {
+    background-color: rgb(0, 255, 0);
+    border-radius: 18px;
+    border-color: rgb(0, 255, 0);
+    color: white;
+    padding: 10px;
+    font-family: sans-serif;
+    transition: 1s;
+}
+
+.contact-button:hover {
+    background-color: rgba(255, 255, 255, 0.559);
+    opacity: 0.7;
+    color: black;
+}
+
+.image-pro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.second-h1 {
+    font-family: sans-serif;
+    text-decoration: underline;
+    margin-left: 500px;
+    margin-bottom: 30px;
+    width: 500px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1;
+}
+
+.profile {
+    border-bottom: 5px black solid;
+}
+.about p {
+    width: 500px;
+    margin-left: 20px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
