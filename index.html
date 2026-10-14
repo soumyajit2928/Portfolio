@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SMFX — Website Developer</title>
+<meta name="description" content="SMFX designs and builds fast, responsive websites, e-commerce stores and web applications, using AI-assisted workflows.">
+<meta name="theme-color" content="#07070c">
+<!-- After deploying, replace https://YOUR-SITE-URL with your real address -->
+<link rel="canonical" href="https://YOUR-SITE-URL/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SMFX — Website Developer">
+<meta property="og:description" content="Fast, responsive websites and web apps, built with clean code and AI-assisted workflows.">
+<meta property="og:image" content="https://YOUR-SITE-URL/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="mtn" aria-hidden="true"><svg viewBox="0 0 1200 320" preserveAspectRatio="none"><path vector-effect="non-scaling-stroke" d="M0 320V250L110 200L200 230L330 130L400 170L520 60L600 130L690 100L800 200L900 150L1020 210L1200 160V320Z"/></svg></div>
+<div class="blobs" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="glow" aria-hidden="true"></div>
+<div class="rail" aria-hidden="true"><i></i><b></b></div>
+<header class="nav">
+  <a class="brand" href="#home"><img src="assets/logo.webp" width="36" height="36" alt=""><span id="brand">SMFX</span></a>
+  <button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
+  <nav id="menu" aria-label="Main">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+<main id="main">
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <p class="kicker">Website developer</p>
+    <h1>Websites that look sharp and work without friction.</h1>
+    <p class="lead">I design and build business sites, online stores and web apps. AI-assisted workflows help me move from idea to launch faster, and I review and test everything before it ships.</p>
+    <div class="cta"><a class="btn primary" href="#contact">Contact me</a><a class="btn" href="#projects">View my work</a></div>
+  </div>
+  <div class="candles" aria-hidden="true"></div>
+  <div class="hero-art"><svg class="ring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="49"/></svg><span class="star" aria-hidden="true"></span><img src="assets/logo.webp" width="440" height="440" alt="SMFX emblem: a chess king on a cliff facing a mountain and rising candlesticks"></div>
+</section>
+
+<section id="about" class="sec reveal">
+  <h2>About</h2>
+  <div class="two">
+    <div>
+      <p>I'm a website developer who builds things that are clear to use and easy to maintain. I start with what your visitors need to do, then design the simplest interface that gets them there.</p>
+      <p>My work focuses on clean UI, responsive layouts that hold up on any screen, working functionality, and a smooth user experience from first click to final action.</p>
+    </div>
+    <div class="portrait" role="img" aria-label="Space for a profile photo"><span>Add your photo:<br>assets/profile.webp</span></div>
+  </div>
+</section>
+
+<section id="services" class="sec reveal"><h2>Services</h2><div class="grid" id="services-grid"></div></section>
+<section id="skills" class="sec reveal"><h2>Skills and technologies</h2><div class="grid" id="skills-grid"></div></section>
+<section id="projects" class="sec reveal"><h2>Projects</h2><div class="grid" id="projects-grid"></div></section>
+<section id="process" class="sec reveal"><h2>Work process</h2><ol class="steps" id="process-list"></ol></section>
+
+<section id="contact" class="sec reveal">
+  <h2>Let's discuss your project</h2>
+  <p class="lead">Tell me what you need and I'll reply with next steps and a rough plan.</p>
+  <div class="two">
+    <div class="contact-links">
+      <p>Email<br><a id="email-link" href="#"></a></p>
+      <p id="wa-wrap" hidden>WhatsApp<br><a id="wa-link" href="#" target="_blank" rel="noopener">Message me</a></p>
+    </div>
+    <form id="enquiry" novalidate>
+      <label>Name<input name="name" autocomplete="name" required></label><small class="err" data-for="name"></small>
+      <label>Email<input name="email" type="email" autocomplete="email" required></label><small class="err" data-for="email"></small>
+      <label>Project type<select name="type" required><option value="">Choose one</option><option>Business website</option><option>Landing page</option><option>E-commerce website</option><option>Web application</option><option>Website redesign</option><option>Maintenance</option><option>Other</option></select></label><small class="err" data-for="type"></small>
+      <label>Budget range<select name="budget" required><option value="">Choose one</option><option>Under ₹25,000</option><option>₹25,000 – ₹75,000</option><option>₹75,000 – ₹2,00,000</option><option>Above ₹2,00,000</option><option>Not sure yet</option></select></label><small class="err" data-for="budget"></small>
+      <label>Message<textarea name="message" rows="5" required minlength="20"></textarea></label><small class="err" data-for="message"></small>
+      <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn primary" type="submit">Send enquiry</button>
+      <p id="status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer>
+  <div><strong id="foot-brand">SMFX</strong><p>Website design and development.</p></div>
+  <nav aria-label="Footer"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+  <div id="foot-links"></div>
+  <p class="copy">© <span id="year"></span> SMFX. All rights reserved.</p>
+</footer>
+<script src="content.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
