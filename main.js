@@ -21,11 +21,12 @@
   S.projects.forEach(p => {
     const c = el("article", "card project");
     if (p.image) { const i = el("img"); i.src = p.image; i.alt = `Screenshot of ${p.title}`; i.loading = "lazy"; i.width = 640; i.height = 400; c.append(i); }
-    c.append(el("h3", "", p.title), el("p", "", p.description));
-    if (p.tech?.length) { const u = el("ul", "chips"); p.tech.forEach(x => u.append(el("li", "", x))); c.append(u); }
+    if (!p.image) c.classList.add("noimg");
+    const b = el("div", "body"); b.append(el("h3", "", p.title), el("p", "", p.description));
+    if (p.tech?.length) { const u = el("ul", "chips"); p.tech.forEach(x => u.append(el("li", "", x))); b.append(u); }
     const row = el("div", "cta");
     [["Live demo", p.live], ["GitHub", p.github]].forEach(([l, u]) => { if (u) { const a = el("a", "btn", l); a.href = u; a.target = "_blank"; a.rel = "noopener"; row.append(a); } });
-    c.append(row); pg.append(c);
+    b.append(row); c.append(b); pg.append(c);
   });
 
   // Contact + footer

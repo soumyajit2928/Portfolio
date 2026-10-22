@@ -39,6 +39,14 @@ window.SITE = {
        tech: ["HTML", "CSS"], live: "https://...", github: "https://github.com/..." } */
   projects: [
     {
+      title: "ASUFX Discord Community",
+      description: "Website for the ASUFX trading community on Discord, with pages for giveaways, prop firms, tournaments and news, and clear calls to join the server.",
+      image: "assets/projects/asufx.webp",
+      tech: ["HTML", "CSS", "Vercel"],
+      live: "https://asufx.vercel.app",
+      github: ""
+    },
+    {
       title: "Ghost Room",
       description: "A private, anonymous chat app. Share a room by link, chat with temporary identities, and let the host end the session to delete all of its data. Rooms are unlisted, not end-to-end encrypted.",
       image: "assets/projects/ghost.webp",
